@@ -1,0 +1,384 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>F1</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+    <!-- light-box -->
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+   <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/f1logo.jpg" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="shop.html">Tienda</a></li>
+						    	<li><a href="team.html">Equipos</a></li>
+						    	<li class="current"><a href="events.html">Eventos</a></li>
+						    	<li><a href="compañia.html">Compañias</a></li>							
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				   <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  <li class="list_img"><img src="images/mercedesnegra.jpg" alt=""/></li>
+						  <li class="list_desc"><h4><a href="#">Lewis Hamilton 2022 Cap</a></h4><span class="actual">1 x
+                          $40.00</span></li>
+						  <div class="login_buttons">
+							 <div class="check_button"><a href="checkout.html">Check out</a></div>
+							 <div class="login_button"><a href="login.html">Login</a></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row ex_box">
+				<h3 class="m_2">Grandes Premio</h3>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.001.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.001.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Bahrain International Circuit
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.002.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.002.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Jeddah Corniche Circuit
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.003.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.003.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Albert Park Circuit
+					</div>
+				</a></div>
+				</div>
+		    </div>
+		    <div class="row ex_box">
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.004.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.004.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Autodromo Enzo e Dino Ferrari 
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.005.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.005.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Miami International Autodrome
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.006.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.006.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Circuit de Barcelona-Catalunya
+					</div>
+				</a></div>
+				</div>
+		    </div>
+		    <div class="row ex1_box">
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.007.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.007.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Circuit de Monaco
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.008.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.008.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Baku City Circuit
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.009.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.009.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Circuit Gilles-Villeneuve
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.010.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.010.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Silverstone Circuit
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.011.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.011.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Red Bull Ring
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.012.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.012.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Circuit Paul Ricard
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.013.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.013.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Hungaronring
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.014.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.014.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Circuit de Spa-Francorchamps
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.015.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.015.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Circuit Zandvoort
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.016.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.016.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Autodromo Nazionale Monza
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.017.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.017.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Marina Bay Street Circuit
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.018.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.018.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Suzuka International Racing Course
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.019.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.019.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Circuit of The Americas
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.020.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.020.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Autodromo Hermanos Rodriguez
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.021.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.021.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Autodromo Jose Carlos Pace
+					</div>
+				</a></div>
+			   </div>
+			   <div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/GP F1.022.jpeg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/GP F1.022.jpeg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						Yas Marina Circuit
+					</div>
+				</a></div>
+			   </div>
+		    </div>
+		 </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Productos</h4>
+							<li><a href="#">Mujer</a></li>
+							<li><a href="#">Hombre</a></li>
+							<li><a href="#">Niños</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Sobre:</h4>
+							<li><a href="#">Carreras y pasantías</a></li>
+							<li><a href="#">Patrocinios</a></li>
+							<li><a href="#">Equipos</a></li>
+							<li><a href="#">Solicitar/Descargar Catálogo</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Atención al cliente</h4>
+							<li><a href="#">Contactanos</a></li>
+							<li><a href="#">Envío y seguimiento de pedidos</a></li>
+							<li><a href="#">Devoluciones fáciles</a></li>
+							<li><a href="#">Garantia</a></li>
+							<li><a href="#">Piezas de encuadernación de repuesto</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>BOLETIN INFORMATIVO</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="@gmail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="listo">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   				</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+					  <dl id="sample" class="dropdown">
+				        <dt><a href="#"><span>Cambiar Region</span></a></dt>
+				        <dd>
+				            <ul>
+								<li><a href="#">Mexico  ><span class="value">MX</span></a></li>
+				                <li><a href="#">España  ><span class="value">ES</span></a></li>
+				                <li><a href="#">Salvador ><span class="value">SV</span></a></li>
+				                <li><a href="#">Colombia ><span class="value">CL</span></a></li>
+				                <li><a href="#">Argentina ><span class="value">AG</span></a></li>
+				                <li><a href="#">Chile><span class="value">CH</span></a></li>
+				            </ul>
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
